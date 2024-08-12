@@ -1,0 +1,109 @@
+/* CSS Modules offer a way to scope CSS by automatically creating unique class names, which helps avoid style conflicts in larger applications.
+Usage:
+Name your CSS file with .module.css, e.g., Button.module.css.
+Import the styles into your component and use them as JavaScript objects. */
+
+/* We can have nested elements inside css and it's like heirachy will go */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    height: 100dvh;
+    min-height: 500px;
+    
+    .Hero{
+        max-width: 200px;
+    }
+    /* It's like parent this style applied to span only inside the container like so a-hred and inside a img only */
+    span{
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+          a{
+            margin: 0;
+            img{
+                width: 30px;
+            }
+            img:hover{
+                transform: scale(1.5);
+            }
+          }
+    }
+    /* It is in container but not in span so it outisde. In jero.j it is cv hrefs */
+    a{
+        width: fit-content;
+        align-self: center;
+    }
+
+    button {
+        background-color: var(--btn-color);
+        color: var(--btn-text-color);
+        border: none;
+        border-radius: 20px;
+        width: 126px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 4px black;
+        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    }
+    button:hover {
+        transform: scale(1.05);
+    }
+    button:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 2px black;
+    }
+}
+
+.colorModecontainer{
+    position: relative;
+}
+
+.colorMode{
+    position: absolute;
+    right: 0px;
+    width: 25px;
+}
+
+.colorMode:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.description{
+    max-width: 24ch;
+    text-align: center;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* See this is what u wondering. Just media query based on this size of width change the functionality
+ofcourse you should have in depth knowledge of css to make looks betters. this is for tab greated than or equal to 800 and 1400 for desktop */
+@media (width >= 800px) {
+    .container {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      .Hero {
+        max-width: 350px;
+        width: 350px;
+      }
+    }
+  }
+  
+  @media (width >= 1400px) {
+    .container {
+      .Hero {
+        max-width: 400px;
+        width: 400px;
+      }
+    }
+  }
