@@ -1,11 +1,12 @@
 import styles from './projects.module.css';
 import viberr from '../../assets/Blog Website.jpg';
 import freshBurger from '../../assets/Personality.jpg';
-// import hipsster from '../../assets/hipsster.png';
+import hipsster from '../../assets/hipsster.png';
 import secrets from '../../assets/SecretsImg.jpg'
 import fitLift from '../../assets/fitlift.png';
 import qrcode from '../../assets/Qrcode.jpg'
 import todo from  '../../assets/Todo.jpg'
+import simon from '../../assets/Simon.jpg'
 import ProjectsCard from '../../common/projectsCard'
 
 function Projects() {
@@ -44,10 +45,16 @@ function Projects() {
           p="convert Url into QR-Code"
         />
         <ProjectsCard
-          card={fitLift}
+          card={simon}
           link="https://github.com/Hirthuk/SimonGame"
           h3="Simon"
           p="Play Simon game"
+        />
+        <ProjectsCard
+          card={hipsster}
+          link="https://github.com/Hirthuk/Drumplay"
+          h3="Drumplay"
+          p="Play Drums"
         />
         
         
