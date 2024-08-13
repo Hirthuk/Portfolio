@@ -20,7 +20,7 @@ function Projects() {
           card={freshBurger}
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Personality Website"
-          p="Personality analyzer and Builder"
+          p="Personality  Builder"
         />
         <ProjectsCard
           card={hipsster}
