@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section id='contact' className= {styles.container}>
         <h1 className='sectionTitile'> contact</h1>
-        <form action="">
+        <form action="mailto:sharankumarp02@gmail.com">
             <div className='formGroup'>
                 <label htmlFor="name" hidden>
                     Name
