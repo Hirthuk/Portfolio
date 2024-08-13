@@ -74,9 +74,10 @@ Import the styles into your component and use them as JavaScript objects. */
 }
 
 .description{
-    max-width: 24ch;
+    max-width: 40ch;
     text-align: center;
     justify-content: center;
+   
 }
 
 .info{
