@@ -1,12 +1,16 @@
 import styles from './projects.module.css';
 import viberr from '../../assets/Blog Website.jpg';
-import freshBurger from '../../assets/Personality.jpg';
-import hipsster from '../../assets/hipsster.png';
-import secrets from '../../assets/SecretsImg.jpg'
-import fitLift from '../../assets/fitlift.png';
+
+import FoodBooker from '../../assets/FoodBooker_image.webp'
+import HealthDashboard from '../../assets/Healthdashboard.webp'
+import Blog from '../../assets/CreateBlog.webp'
+import Personality from '../../assets/Personality_devloper.webp'
+
+
+
 import qrcode from '../../assets/Qrcode.jpg'
 import todo from  '../../assets/Todo.jpg'
-import simon from '../../assets/Simon.jpg'
+
 import ProjectsCard from '../../common/projectsCard'
 
 function Projects() {
@@ -15,22 +19,28 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectsCard
-          card={viberr}
+          card={Blog}
           link="https://github.com/Hirthuk/CreateBlogApp"
           h3="CreateBlog"
-          p="Simple Blog webiste"
+          p="Blog webiste"
         />
         <ProjectsCard
-          card={freshBurger}
+          card={FoodBooker}
+          link="https://github.com/Hirthuk/FrontEnd_FodBooker"
+          h3="Food Booker"
+          p="Food ordering app for Office"
+        />
+        <ProjectsCard
+          card={HealthDashboard}
+          link="https://github.com/Hirthuk/Dashoborad_React"
+          h3="Health dashboard"
+          p="Schedule workout and diet"
+        />
+        <ProjectsCard
+          card={Personality}
           link="https://github.com/Hirthuk/Personality-Website"
           h3="Personality Website"
           p="Personality  Builder"
-        />
-        <ProjectsCard
-          card={secrets}
-          link="https://github.com/Hirthuk/Crazysecrets/tree/main"
-          h3="Secrets"
-          p="Get random secrets"
         />
         <ProjectsCard
           card={todo}
@@ -44,18 +54,7 @@ function Projects() {
           h3="QR-Code"
           p="convert Url into QR-Code"
         />
-        <ProjectsCard
-          card={simon}
-          link="https://github.com/Hirthuk/SimonGame"
-          h3="Simon"
-          p="Play Simon game"
-        />
-        <ProjectsCard
-          card={hipsster}
-          link="https://github.com/Hirthuk/Drumplay"
-          h3="Drumplay"
-          p="Play Drums"
-        />
+        
         
         
       </div>
