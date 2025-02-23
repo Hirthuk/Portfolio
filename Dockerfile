@@ -1,5 +1,5 @@
 # Stage 1: Build the React app
-FROM node:18 as build-stage
+FROM node:18 AS build-stage
 
 # Set the working directory
 WORKDIR /app
@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install all dependencies (including devDependencies)
+RUN npm install --include=dev
 
 # Copy the rest of the application code
 COPY . .
