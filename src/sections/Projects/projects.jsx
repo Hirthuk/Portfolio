@@ -1,9 +1,7 @@
 import styles from './projects.module.css';
-import viberr from '../../assets/Blog Website.jpg';
-
 import FoodBooker from '../../assets/FoodBooker_image.webp'
 import HealthDashboard from '../../assets/Healthdashboard.webp'
-import Blog from '../../assets/CreateBlog.webp'
+import Blog from '../../assets/Nike_project_image.jpeg'
 import Personality from '../../assets/Personality_devloper.webp'
 
 
@@ -20,9 +18,9 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectsCard
           card={Blog}
-          link="https://github.com/Hirthuk/CreateBlogApp"
-          h3="CreateBlog"
-          p="Blog webiste"
+          link="https://walklikepro.netlify.app/"
+          h3="Shoe Shop"
+          p="React E-commerce site"
         />
         <ProjectsCard
           card={FoodBooker}
