@@ -3,10 +3,7 @@ import FoodBooker from '../../assets/FoodBooker_image.webp'
 import HealthDashboard from '../../assets/Healthdashboard.webp'
 import Blog from '../../assets/Nike_project_image.jpeg'
 import Personality from '../../assets/Personality_devloper.webp'
-
-
-
-import qrcode from '../../assets/Qrcode.jpg'
+import GSSTORE from '../../assets/GS_Store.jpeg'
 import todo from  '../../assets/Todo.jpg'
 
 import ProjectsCard from '../../common/projectsCard'
@@ -17,10 +14,22 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectsCard
+        card = {GSSTORE}
+        link="https://gsstorefrontend.netlify.app/"
+        h3="E-Commerce site"
+        p= "Fully functional E-Commerce site"
+        />
+        <ProjectsCard
           card={Blog}
           link="https://walklikepro.netlify.app/"
           h3="Shoe Shop"
           p="React E-commerce site"
+        />
+        <ProjectsCard
+          card={HealthDashboard}
+          link="https://hirthuk.github.io/Health_Dashboard/#"
+          h3="Health dashboard"
+          p="Frontend dashboard"
         />
         <ProjectsCard
           card={FoodBooker}
@@ -28,11 +37,11 @@ function Projects() {
           h3="Food Booker"
           p="Food ordering app for Office"
         />
-        <ProjectsCard
-          card={HealthDashboard}
-          link="https://github.com/Hirthuk/Dashoborad_React"
-          h3="Health dashboard"
-          p="Schedule workout and diet"
+         <ProjectsCard
+          card={todo}
+          link="https://simplereactfrontendtodo.netlify.app/"
+          h3="To-do-List"
+          p="Simple React based To-do app"
         />
         <ProjectsCard
           card={Personality}
@@ -40,18 +49,7 @@ function Projects() {
           h3="Personality Website"
           p="Personality  Builder"
         />
-        <ProjectsCard
-          card={todo}
-          link="https://github.com/Hirthuk/React/blob/master/319-keeper-app-part-3-starting"
-          h3="To-do-List"
-          p="React based To-do list site"
-        />
-        <ProjectsCard
-          card={qrcode}
-          link="https://github.com/Hirthuk/QrCode-generator"
-          h3="QR-Code"
-          p="convert Url into QR-Code"
-        />
+       
         
         
         
